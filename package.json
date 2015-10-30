@@ -1,0 +1,26 @@
+{
+  "name": "ga",
+  "version": "1.0.0",
+  "description": "Source code analysis of the analytics.js tracking code.",
+  "main": "analytics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreyer/ga.git"
+  },
+  "keywords": [
+    "analytics"
+  ],
+  "author": "@Dreyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dreyer/ga/issues"
+  },
+  "homepage": "https://github.com/Dreyer/ga#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^1.7.3"
+  }
+}
