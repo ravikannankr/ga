@@ -966,17 +966,17 @@
             if ('object' === typeof ref) {
                 for (var key in ref) {
                     if (ref.hasOwnProperty(key)) {
-                        ab(this, key, ref[key], callback);
+                        fieldValueSet(this, key, ref[key], callback);
                     }
                 }
             } else {
-                ab(this, ref, value, callback);
+                fieldValueSet(this, ref, value, callback);
             }
         }
     };
 
     /**
-     * ab: [?]
+     * ab: Set the value of the field handling a callback.
      *
      * @param {object} self -
      * @param {string} key -
@@ -984,7 +984,7 @@
      * @param {function=} callback -
      * @return {undefined}
      */
-    var ab = function (self, key, value, callback) {
+    var fieldValueSet = function (self, key, value, callback) {
         if (undefined !== value && trackingIdParameter === key) {
             // [?] not sure what the point of this is as its not evaluated.
             trackingIdPattern.test(value);
